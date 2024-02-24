@@ -1,7 +1,5 @@
-import React from 'react';
-
-const MenuItem = ({ title, description, imageName, price }) => {
-    const imageUrl = process.env.PUBLIC_URL + `/images/${imageName}`;
+const MenuItem = ({ title, description, imageName, price, count, onAdd, onRemove }) => {
+    const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;
 
     return (
         <div className="row menu-item">
@@ -12,8 +10,12 @@ const MenuItem = ({ title, description, imageName, price }) => {
                 <h3 className="item-title">{title}</h3>
                 <p className="item-description">{description}</p>
                 <div className="d-flex justify-content-between align-items-center">
-                    <p className="price me-2">${price}</p>
-                    <button className="btn add-button">Add</button>
+                    <p className="price me-2">${price.toFixed(2)}</p>
+                    <div>
+                        <button onClick={onRemove}>-</button>
+                        <span> {count} </span>
+                        <button onClick={onAdd}>+</button>
+                    </div>
                 </div>
             </div>
         </div>
