@@ -1,3 +1,5 @@
+import '../App.css';
+
 const MenuItem = ({ title, description, imageName, price, count, onAdd, onRemove }) => {
     const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;
 
@@ -12,9 +14,9 @@ const MenuItem = ({ title, description, imageName, price, count, onAdd, onRemove
                 <div className="d-flex justify-content-between align-items-center">
                     <p className="price me-2">${price.toFixed(2)}</p>
                     <div>
-                        <button onClick={onRemove}>-</button>
+                        <button className="button-round" onClick={onRemove}>-</button>
                         <span> {count} </span>
-                        <button onClick={onAdd}>+</button>
+                        <button className="button-round" onClick={onAdd}>+</button>
                     </div>
                 </div>
             </div>

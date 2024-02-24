@@ -70,3 +70,23 @@ body {
   font-size: 0.75em;
   box-shadow: 0 4px 8px rgba(12, 12, 12, 0.2);
 }
+
+.button-round {
+  border-radius: 50%; /* Make buttons round */
+  width: 30px; /* Set a fixed width */
+  height: 30px; /* Set a fixed height */
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px; /* Add some space between buttons */
+}
+
+.order-clear-buttons {
+  margin: 10px 5px; /* Add some space around the buttons */
+  border-radius: 20px; /* Slightly rounded corners for order/clear buttons */
+}
+
+/* Improve spacing and appearance of order/clear buttons */
+.order-clear-container {
+  display: flex;
+  margin-top: 20px;
+}

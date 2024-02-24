@@ -68,10 +68,10 @@ function App() {
                     </div>
                 ))}
             </div>
-            <div>
+            <div className="order-clear-container">
                 <h3>Total: ${total.toFixed(2)}</h3>
-                <button onClick={handleOrder}>Order</button>
-                <button onClick={handleClearAll}>Clear all</button>
+                <button className="order-clear-buttons" onClick={handleOrder}>Order</button>
+                <button className="order-clear-buttons" onClick={handleClearAll}>Clear all</button>
             </div>
         </div>
     );
