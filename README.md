@@ -1,2 +1,4 @@
-# cs378-p3
-This is the repository for HCI's P3
+# Harman Sandhu 
+## hjs2245
+
+I am using x slip hours for this assignment!
